@@ -27,20 +27,21 @@ A Web API that provides CRUD functionality and swagger documentations. Animal Sh
 6. Run command `dotnet build` 
 7. Add `appsettings.json` file to the root directory
 8. Update `ConnectionStrings` to reflect the name of database and password
-   `{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft": "Warning",
-      "Microsoft.Hosting.Lifetime": "Information"
+   ```
+   {
+      "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft": "Warning",
+          "Microsoft.Hosting.Lifetime": "Information"
+        }
+      },
+      "AllowedHosts": "*",
+      "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=database_name;uid=root;pwd=yourpassword;"
+      }
     }
-  },
-  "AllowedHosts": "*",
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=database_name;uid=root;pwd=yourpassword;"
-  }
-}`
-9. Import `ahmed_ghouzlane.sql` to your database manager editor
+    ```
 7. To run the project, rum command `dotnet run`
 8. To start a development server and view the project in the browser, type in browser URL: localhost:5000
 
