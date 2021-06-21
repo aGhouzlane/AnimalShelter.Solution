@@ -2,14 +2,16 @@
 using AnimalShelter.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AnimalShelter.Migrations
 {
     [DbContext(typeof(AnimalShelterContext))]
-    partial class AnimalShelterContextModelSnapshot : ModelSnapshot
+    [Migration("20210621144242_newSeedData")]
+    partial class newSeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,42 +44,42 @@ namespace AnimalShelter.Migrations
                         new
                         {
                             AnimalId = 1,
-                            Age = 3,
+                            Age = 7,
                             Gender = "Female",
-                            Name = "Mimi",
-                            Species = "Cat"
+                            Name = "Matilda",
+                            Species = "Woolly Mammoth"
                         },
                         new
                         {
                             AnimalId = 2,
-                            Age = 1,
+                            Age = 10,
                             Gender = "Female",
-                            Name = "Rocky",
-                            Species = "Dog"
+                            Name = "Rexie",
+                            Species = "Dinosaur"
                         },
                         new
                         {
                             AnimalId = 3,
                             Age = 2,
-                            Gender = "Male",
-                            Name = "Snowy",
-                            Species = "Cat"
+                            Gender = "Female",
+                            Name = "Matilda",
+                            Species = "Dinosaur"
                         },
                         new
                         {
                             AnimalId = 4,
-                            Age = 3,
+                            Age = 4,
                             Gender = "Male",
-                            Name = "Pika",
-                            Species = "Bird"
+                            Name = "Pip",
+                            Species = "Shark"
                         },
                         new
                         {
                             AnimalId = 5,
-                            Age = 2,
-                            Gender = "Female",
-                            Name = "Moka",
-                            Species = "Bird"
+                            Age = 22,
+                            Gender = "Male",
+                            Name = "Bartholomew",
+                            Species = "Dinosaur"
                         });
                 });
 #pragma warning restore 612, 618
