@@ -45,6 +45,13 @@ A Web API that provides CRUD functionality and swagger documentations. Animal Sh
 7. To run the project, rum command `dotnet run`
 8. To start a development server and view the project in the browser, type in browser URL: localhost:5000
 
+## EndPoints
+
+1. `GET: api/animals` returns all animals in the database 
+2. `GET: api/Animals/{id}` returns an animal with the given id
+3. `POST: api/Animals` adds a new animal in the database
+4. `PUT: api/Animals/{id}` updates an animal with the given id
+5. `DELETE: api/Animals/{id}` deletes an animal with the given id
 
 ## License ⚖
 
