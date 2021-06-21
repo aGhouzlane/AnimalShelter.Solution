@@ -44,6 +44,7 @@ A Web API that provides CRUD functionality and swagger documentations. Animal Sh
     ```
 7. To run the project, rum command `dotnet run`
 8. To start a development server and view the project in the browser, type in browser URL: localhost:5000
+9. To navigate to Swagger documentation, type in browser URL: localhost:5000/Swagger
 
 ## EndPoints
 
